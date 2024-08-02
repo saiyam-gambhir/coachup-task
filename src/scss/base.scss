@@ -1,0 +1,30 @@
+:root {
+  --app-max-width: 768px;
+  --border-radius-lg: 40px;
+  --border-radius: 16px;
+  --font-size: 16px;
+  --primary-white: #FFF;
+}
+
+body {
+  font-size: var(--font-size);
+}
+
+#app {
+  max-width: var(--app-max-width);
+  min-height: 100vh;
+}
+
+@keyframes slideToPosition {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideAbovePosition {
+  to {
+    opacity: 1;
+    transform: translateY(-12px);
+  }
+}

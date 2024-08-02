@@ -1,0 +1,11 @@
+.header {
+  background: var(--primary-white);
+  border-radius: calc(var(--border-radius) * 3);
+  border: 1px solid;
+  height: 3rem;
+  left: 50%;
+  max-width: var(--app-max-width);
+  top: 8px;
+  transform: translateX(-50%);
+  width: calc(100% - 16px);
+}
