@@ -1,10 +1,19 @@
+@keyframes headerSlideToPosition {
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
 .header {
+  animation: headerSlideToPosition .75s forwards;
   background: var(--primary-white);
   border-radius: calc(var(--border-radius) * 3);
   height: 3rem;
   left: 50%;
   max-width: calc(var(--app-max-width) - 16px);
+  opacity: 0;
   top: 8px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-4rem);
   width: calc(100% - 16px);
 }

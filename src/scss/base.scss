@@ -24,11 +24,14 @@ body {
 }
 
 #app {
-  animation: slideToPosition .75s forwards;
   max-width: var(--app-max-width);
   min-height: 100dvh;
-  transform: translateY(-4rem);
+}
+
+.animate {
+  animation: slideToPosition .75s forwards;
   opacity: 0;
+  transform: translateY(-4rem);
 }
 
 .pt-6 {
