@@ -1,12 +1,19 @@
 :root {
   --active-indicator: #F092F8;
   --app-max-width: 768px;
+  --bg-light-blue: rgba(37, 123, 251, 0.1);
+  --bg-light-green: #EFF5F5;
+  --bg-light-pink: #FCE0FF;
+  --bg-light-red: rgba(240, 85, 132, 0.1);
+  --bg-light-yellow: #FFF3C8;
   --bg-light: #F6F6F6;
+  --border-light: rgba(235, 235, 237, 1);
   --border-radius-lg: 40px;
   --border-radius: 16px;
   --font-size: 16px;
   --primary-white: #FFFFFF;
   --text-primary: #3A3C44;
+  --text-secondary: #878787;
 }
 
 body {
@@ -21,6 +28,7 @@ body {
   max-width: var(--app-max-width);
   min-height: 100dvh;
   transform: translateY(-4rem);
+  opacity: 0;
 }
 
 .pt-6 {
@@ -46,4 +54,15 @@ body {
   border-radius: var(--border-radius-lg);
   height: 2.75rem;
   width: 2.75rem;
+}
+
+.indicator {
+  background: var(--active-indicator);
+  border-radius: var(--border-radius-lg);
+  display: inline-flex;
+  height: .375rem;
+  margin-right: .25rem;
+  width: .375rem;
+  left: .4rem;
+  top: .15rem;
 }

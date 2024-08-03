@@ -1,0 +1,33 @@
+.badge {
+  align-items: center;
+  border-radius: calc(var(--border-radius) / 2);
+  color: var(--text-primary);
+  display: inline-flex;
+  font-size: 0.625rem;
+  justify-content: center;
+
+  &-announcement {
+    background: var(--bg-light-yellow);
+  }
+
+  &-bravo {
+    background: var(--bg-light-pink);
+  }
+
+  &-hashtag {
+    background: var(--bg-light-blue);
+  }
+
+  &-mention {
+    background: var(--bg-light-green);
+  }
+
+  &-points {
+    background: var(--bg-light-red);
+  }
+
+  &-lg {
+    border-radius: var(--border-radius-lg);
+    font-size: 1rem;
+  }
+}

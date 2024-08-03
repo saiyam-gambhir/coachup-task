@@ -16,6 +16,14 @@
   }
 
   &-sm {
+    font-size: 0.875rem;
+  }
+
+  &-xs {
     font-size: .75rem;
+  }
+
+  &-secondary {
+    color: var(--text-secondary);
   }
 }
