@@ -16,6 +16,7 @@ body {
 
 #app {
   max-width: var(--app-max-width);
+  min-height: 100dvh;
   animation: slideToPosition .5s forwards;
   transform: translateY(-50px);
 }
