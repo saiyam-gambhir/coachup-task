@@ -1,0 +1,44 @@
+.tabs {
+  .nav {
+    &-tabs {
+      background: var(--bg-light);
+      border-radius: var(--border-radius-lg);
+      border: 0;
+      height: 2.25rem;
+      gap: 1rem;
+    }
+
+    &-item {
+      flex-basis: calc(50% - .5rem);
+    }
+
+    &-link {
+      background: transparent;
+      border-radius: var(--border-radius-lg);
+      border: 0;
+      color: var(--text-primary);
+      font-size: 0.875rem;
+      text-align: center;
+      font-weight: 400;
+
+      &.active {
+        font-family: 'GeneralSans-Semibold';
+        font-weight: 600;
+
+        .nav-active-indicator {
+          opacity: 1;
+        }
+      }
+    }
+
+    &-active-indicator {
+      background: var(--active-indicator);
+      border-radius: var(--border-radius-lg);
+      display: inline-flex;
+      height: .375rem;
+      margin-right: .25rem;
+      opacity: 0;
+      width: .375rem;
+    }
+  }
+}

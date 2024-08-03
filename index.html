@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Vite App</title>
   </head>
   <body>
@@ -35,7 +36,7 @@
       </header>
 
       <!-- Actions -->
-      <section class="actions pb-4 pt-6">
+      <section class="actions pb-5 pt-6">
         <div class="greetings d-flex align-items-center pt-4 px-2">
           <figure class="m-0">
             <img src="./src/images/avatar.png" alt="Avatar" style="width: 48px; height: auto;">
@@ -91,6 +92,34 @@
           </div>
         </div>
       </section>
+
+      <!-- Main -->
+      <main class="main pt-3 py-4 px-2">
+        <section class="tabs">
+          <ul class="nav nav-tabs p-1" id="tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="active nav-link font-medium p-1 w-100 d-flex align-items-center justify-content-center" id="community-tab" data-bs-toggle="tab" data-bs-target="#community-tab-pane" type="button" role="tab" aria-controls="community-tab-pane" aria-selected="true">
+                <span class="nav-active-indicator"></span>
+                Community
+              </button>
+            </li>
+            <li class="nav-item " role="presentation">
+              <button class="nav-link font-medium w-100 d-flex align-items-center justify-content-center p-1" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard-tab-pane" type="button" role="tab" aria-controls="dashboard-tab-pane" aria-selected="false">
+                <span class="nav-active-indicator"></span>
+                Dashboard
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content pt-4" id="tabContent">
+            <div class="tab-pane fade show active" id="community-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              Community
+            </div>
+            <div class="tab-pane fade" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              Dashboard
+            </div>
+          </div>
+        </section>
+      </main>
 
       <!-- Menu Bar -->
       <menu-bar>

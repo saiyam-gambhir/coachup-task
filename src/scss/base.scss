@@ -1,5 +1,7 @@
 :root {
+  --active-indicator: #F092F8;
   --app-max-width: 768px;
+  --bg-light: #F6F6F6;
   --border-radius-lg: 40px;
   --border-radius: 16px;
   --font-size: 16px;
@@ -15,10 +17,10 @@ body {
 }
 
 #app {
+  animation: slideToPosition .75s forwards;
   max-width: var(--app-max-width);
   min-height: 100dvh;
-  animation: slideToPosition .5s forwards;
-  transform: translateY(-50px);
+  transform: translateY(-4rem);
 }
 
 .pt-6 {
