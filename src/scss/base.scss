@@ -3,16 +3,26 @@
   --border-radius-lg: 40px;
   --border-radius: 16px;
   --font-size: 16px;
-  --primary-white: #FFF;
+  --primary-white: #FFFFFF;
+  --text-primary: #3A3C44;
 }
 
 body {
+  color: var(--text-primary);
   font-size: var(--font-size);
+  font-family: 'GeneralSans-Regular';
+  font-weight: 400;
 }
 
 #app {
   max-width: var(--app-max-width);
   min-height: 100vh;
+  animation: slideToPosition .5s forwards;
+  transform: translateY(-50px);
+}
+
+.pt-6 {
+  padding-top: 3.5rem;
 }
 
 @keyframes slideToPosition {
@@ -27,4 +37,11 @@ body {
     opacity: 1;
     transform: translateY(-12px);
   }
+}
+
+.icon-holder {
+  background: var(--primary-white);
+  border-radius: var(--border-radius-lg);
+  height: 2.75rem;
+  width: 2.75rem;
 }

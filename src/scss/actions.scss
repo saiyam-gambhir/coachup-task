@@ -1,0 +1,12 @@
+.actions {
+  background: rgb(174,212,249);
+  background: -moz-linear-gradient(0deg, rgba(174,212,249,0.7) 0%, rgba(224,188,242,0.7) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(174,212,249,0.7) 0%, rgba(224,188,242,0.7) 100%);
+  background: linear-gradient(0deg, rgba(174,212,249,0.7) 0%, rgba(224,188,242,0.7) 100%);
+
+  &-item {
+    background: rgba(255, 255, 255, .6);
+    border-radius: var(--border-radius);
+    min-height: 7.8125rem;
+  }
+}
