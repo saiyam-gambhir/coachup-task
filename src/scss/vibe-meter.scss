@@ -47,5 +47,15 @@
         color: var(--text-success);
       }
     }
+
+    &.unsatisfied {
+      background: var(--bg-error);
+      border-color: transparent;
+
+      .vibe-meter-stat {
+        background: var(--primary-white);
+        color: var(--text-error);
+      }
+    }
   }
 }
