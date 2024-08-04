@@ -25,6 +25,15 @@
     border: 1px solid var(--border);
     min-width: 161px;
 
+    @for $i from 1 through 100 {
+      &:nth-child(#{$i}) {
+        opacity: 0;
+        transform: translateX(4rem);
+        animation: slideToPositionX .75s forwards;
+        animation-delay: #{0.1 * $i}s;
+      }
+    }
+
     p {
       color: var(--text-light);
     }

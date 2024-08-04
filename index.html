@@ -99,20 +99,20 @@
         <section class="tabs">
           <ul class="nav nav-tabs p-1" id="tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link p-1 w-100 d-flex align-items-center justify-content-center" id="community-tab" data-bs-toggle="tab" data-bs-target="#community-tab-pane" type="button" role="tab" aria-controls="community-tab-pane" aria-selected="true">
+              <button class="active nav-link p-1 w-100 d-flex align-items-center justify-content-center" id="community-tab" data-bs-toggle="tab" data-bs-target="#community-tab-pane" type="button" role="tab" aria-controls="community-tab-pane" aria-selected="true">
                 <span class="nav-active-indicator"></span>
                 Community
               </button>
             </li>
             <li class="nav-item " role="presentation">
-              <button class="active nav-link w-100 d-flex align-items-center justify-content-center p-1" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard-tab-pane" type="button" role="tab" aria-controls="dashboard-tab-pane" aria-selected="false">
+              <button class="nav-link w-100 d-flex align-items-center justify-content-center p-1" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard-tab-pane" type="button" role="tab" aria-controls="dashboard-tab-pane" aria-selected="false">
                 <span class="nav-active-indicator"></span>
                 Dashboard
               </button>
             </li>
           </ul>
           <div class="tab-content pt-4" id="tabContent">
-            <div class="tab-pane fade show" id="community-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="community-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
               <h3 class="text-sm font-medium m-0">Recent activity</h3>
               <ul class="activity-list list-unstyled">
                 <li class="activity activity-list-item px-2 py-3 mb-3">
@@ -255,8 +255,138 @@
                 </li>
               </ul>
             </div>
-            <div class="active tab-pane show fade" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-              <div class="vibe-meter">
+            <div class="tab-pane show fade" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <!-- Streak -->
+               <div class="streak">
+                <div class="d-flex flex-column pb-3">
+                  <h2 class="text-lg font-medium m-0">
+                    4<svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.30963 9.27574H1.5L7.69037 1V6.84189H11.5L5.30963 15.1176V9.27574Z" fill="#F092F8" stroke="#F092F8" stroke-width="1.47498" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </h2>
+                  <p class="text-md m-0 lh-sm">week streak!</p>
+                </div>
+
+                <div class="timeline-list-items d-flex overflow-y-auto">
+                  <div class="timeline position-relative">
+                    <p class="timeline-month text-xs mb-1">April</p>
+                    <ul class="timeline-list d-flex list-unstyled">
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs font-medium px-2 mb-1">W1</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5477 7.44819H0.5L5.4523 1V5.55181H8.5L3.5477 12V7.44819Z" fill="#F092F8" stroke="#FEEEF3" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item missed d-flex flex-column">
+                        <span class="text-xs px-2 mb-1">W2</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5477 7.44819H1.5L6.4523 1V5.55181H9.5L4.5477 12V7.44819Z" fill="#E0E0E0" stroke="#E0E0E0" stroke-width="1.11443" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.5 3L1.5 11" stroke="#ACB4B8" stroke-width="0.727273" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs font-medium px-2 mb-1">W3</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5477 7.44819H0.5L5.4523 1V5.55181H8.5L3.5477 12V7.44819Z" fill="#F092F8" stroke="#FEEEF3" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs font-medium px-2 mb-1">W4</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5477 7.44819H0.5L5.4523 1V5.55181H8.5L3.5477 12V7.44819Z" fill="#F092F8" stroke="#FEEEF3" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="timeline position-relative">
+                    <p class="timeline-month text-xs mb-1">May</p>
+                    <ul class="timeline-list d-flex list-unstyled">
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs font-medium px-2 mb-1">W1</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5477 7.44819H0.5L5.4523 1V5.55181H8.5L3.5477 12V7.44819Z" fill="#F092F8" stroke="#FEEEF3" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs font-medium px-2 mb-1">W2</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5477 7.44819H0.5L5.4523 1V5.55181H8.5L3.5477 12V7.44819Z" fill="#F092F8" stroke="#FEEEF3" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs px-2 mb-1">W3</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5477 7.44819H1.5L6.4523 1V5.55181H9.5L4.5477 12V7.44819Z" fill="white" stroke="white" stroke-width="1.11443" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs px-2 mb-1">W4</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5477 7.44819H1.5L6.4523 1V5.55181H9.5L4.5477 12V7.44819Z" fill="white" stroke="white" stroke-width="1.11443" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="timeline position-relative">
+                    <p class="timeline-month text-xs mb-1">June</p>
+                    <ul class="timeline-list d-flex list-unstyled">
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs px-2 mb-1">W1</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5477 7.44819H1.5L6.4523 1V5.55181H9.5L4.5477 12V7.44819Z" fill="white" stroke="white" stroke-width="1.11443" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs px-2 mb-1">W2</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5477 7.44819H1.5L6.4523 1V5.55181H9.5L4.5477 12V7.44819Z" fill="white" stroke="white" stroke-width="1.11443" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs px-2 mb-1">W3</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5477 7.44819H1.5L6.4523 1V5.55181H9.5L4.5477 12V7.44819Z" fill="white" stroke="white" stroke-width="1.11443" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="timeline-list-item d-flex flex-column">
+                        <span class="text-xs px-2 mb-1">W4</span>
+                        <span class="timeline-list-item-indicator px-2 d-flex align-items-center justify-content-center py-1">
+                          <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5477 7.44819H1.5L6.4523 1V5.55181H9.5L4.5477 12V7.44819Z" fill="white" stroke="white" stroke-width="1.11443" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+               </div>
+
+              <!-- VibesMeter -->
+              <div class="vibe-meter py-4">
                 <h3 class="text-normal font-medium mb-3">VibesMeter</h3>
                 <ul class="vibe-meter-list list-unstyled p-0 m-0 d-flex overflow-y-auto">
                   <li class="vibe-meter-list-item satisfied p-2">
@@ -275,6 +405,7 @@
                       <p class="text-xs m-0">from 74% (last week)</p>
                     </div>
                   </li>
+
                   <li class="vibe-meter-list-item p-2">
                     <div class="d-flex justify-content-between">
                       <h2 class="text-lg font-medium mb-1">4</h2>
@@ -291,6 +422,7 @@
                       <p class="text-xs m-0">from 6 (last week)</p>
                     </div>
                   </li>
+
                   <li class="vibe-meter-list-item p-2">
                     <div class="d-flex justify-content-between">
                       <h2 class="text-lg font-medium mb-1">6</h2>

@@ -1,0 +1,55 @@
+@keyframes slideToPositionX {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.timeline {
+  @for $i from 1 through 100 {
+    &:nth-child(#{$i}) {
+      opacity: 0;
+      transform: translateX(4rem);
+      animation: slideToPositionX .75s forwards;
+      animation-delay: #{0.1 * $i}s;
+    }
+  }
+
+  &-month {
+    color: var(--text-light);
+  }
+
+  &-list-items {
+    -ms-overflow-style: none;
+    gap: 1rem;
+    scrollbar-width: none;
+  }
+
+  &-list-item {
+    justify-content: center;
+
+    &.missed {
+      color: var(--text-disabled);
+    }
+
+    &:nth-child(1) {
+      justify-content: flex-start;
+
+      .timeline-list-item-indicator {
+        border-radius: var(--border-radius) 0 0 var(--border-radius);
+      }
+    }
+
+    &:nth-child(4) {
+      justify-content: flex-end;
+
+      .timeline-list-item-indicator {
+        border-radius:0 var(--border-radius) var(--border-radius) 0;
+      }
+    }
+  }
+
+  &-list-item-indicator {
+    background: var(--bg-lighter-pink);
+  }
+}
