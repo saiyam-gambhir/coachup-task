@@ -1,19 +1,29 @@
 :root {
   --active-indicator: #F092F8;
   --app-max-width: 768px;
+  --bg-error: #FFF0F0;
   --bg-light-blue: rgba(37, 123, 251, 0.1);
+  --bg-light-green-1: #EEFEEE;
   --bg-light-green: #EFF5F5;
   --bg-light-pink: #FCE0FF;
   --bg-light-red: rgba(240, 85, 132, 0.1);
   --bg-light-yellow: #FFF3C8;
   --bg-light: #F6F6F6;
-  --border-light: rgba(235, 235, 237, 1);
+  --border-light: #ebebed;
   --border-radius-lg: 40px;
   --border-radius: 16px;
+  --border: #DEE4E9;
   --font-size: 16px;
   --primary-white: #FFFFFF;
+  --text-error: #D71D1D;
+  --text-light: #6E757B;
   --text-primary: #3A3C44;
   --text-secondary: #878787;
+  --text-success: #1F8B59;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

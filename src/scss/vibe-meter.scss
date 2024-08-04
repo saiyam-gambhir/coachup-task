@@ -1,0 +1,42 @@
+.vibe-meter {
+
+  &-list {
+    -ms-overflow-style: none;
+    gap: .5rem;
+    scrollbar-width: none;
+  }
+
+  &-stat {
+    border-radius: calc(var(--border-radius) * 1.5);
+
+    &.less {
+      background: var(--bg-error);
+      color: var(--text-error);
+    }
+
+    &.more {
+      background: var(--bg-light-green-1);
+      color: var(--text-success);
+    }
+  }
+
+  &-list-item {
+    border-radius: calc(var(--border-radius) / 2);
+    border: 1px solid var(--border);
+    min-width: 161px;
+
+    p {
+      color: var(--text-light);
+    }
+
+    &.satisfied {
+      background: var(--bg-light-green-1);
+      border-color: transparent;
+
+      .vibe-meter-stat {
+        background: var(--primary-white);
+        color: var(--text-success);
+      }
+    }
+  }
+}

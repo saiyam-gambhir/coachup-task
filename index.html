@@ -99,20 +99,20 @@
         <section class="tabs">
           <ul class="nav nav-tabs p-1" id="tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="active nav-link p-1 w-100 d-flex align-items-center justify-content-center" id="community-tab" data-bs-toggle="tab" data-bs-target="#community-tab-pane" type="button" role="tab" aria-controls="community-tab-pane" aria-selected="true">
+              <button class="nav-link p-1 w-100 d-flex align-items-center justify-content-center" id="community-tab" data-bs-toggle="tab" data-bs-target="#community-tab-pane" type="button" role="tab" aria-controls="community-tab-pane" aria-selected="true">
                 <span class="nav-active-indicator"></span>
                 Community
               </button>
             </li>
             <li class="nav-item " role="presentation">
-              <button class="nav-link w-100 d-flex align-items-center justify-content-center p-1" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard-tab-pane" type="button" role="tab" aria-controls="dashboard-tab-pane" aria-selected="false">
+              <button class="active nav-link w-100 d-flex align-items-center justify-content-center p-1" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard-tab-pane" type="button" role="tab" aria-controls="dashboard-tab-pane" aria-selected="false">
                 <span class="nav-active-indicator"></span>
                 Dashboard
               </button>
             </li>
           </ul>
           <div class="tab-content pt-4" id="tabContent">
-            <div class="tab-pane fade show active" id="community-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="tab-pane fade show" id="community-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
               <h3 class="text-sm font-medium m-0">Recent activity</h3>
               <ul class="activity-list list-unstyled">
                 <li class="activity activity-list-item px-2 py-3 mb-3">
@@ -255,7 +255,60 @@
                 </li>
               </ul>
             </div>
-            <div class="tab-pane fade" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="active tab-pane show fade" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <div class="vibe-meter">
+                <h3 class="text-normal font-medium mb-3">VibesMeter</h3>
+                <ul class="vibe-meter-list list-unstyled p-0 m-0 d-flex overflow-y-auto">
+                  <li class="vibe-meter-list-item satisfied p-2">
+                    <div class="d-flex justify-content-between">
+                      <h2 class="text-lg font-medium mb-1">76%</h2>
+                      <span class="d-flex align-items-center vibe-meter-stat align-self-start px-2 py-1 mt-2">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 2px;">
+                          <path d="M8.5 12.6667V3.33333" stroke="#1F8B59" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3.83333 8L8.5 3.33333L13.1667 8" stroke="#1F8B59" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-xs">2%</span>
+                      </span>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="text-xs font-semibold mb-0">Satisfied</h3>
+                      <p class="text-xs m-0">from 74% (last week)</p>
+                    </div>
+                  </li>
+                  <li class="vibe-meter-list-item p-2">
+                    <div class="d-flex justify-content-between">
+                      <h2 class="text-lg font-medium mb-1">4</h2>
+                      <span class="d-flex align-items-center vibe-meter-stat less align-self-start px-2 py-1 mt-2">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 2px;">
+                          <path d="M8.5 3.33333V12.6667" stroke="#D71D1D" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M13.1667 8L8.50001 12.6667L3.83334 8" stroke="#D71D1D" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-xs">25%</span>
+                      </span>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="text-xs font-semibold mb-0">Indifferent</h3>
+                      <p class="text-xs m-0">from 6 (last week)</p>
+                    </div>
+                  </li>
+                  <li class="vibe-meter-list-item p-2">
+                    <div class="d-flex justify-content-between">
+                      <h2 class="text-lg font-medium mb-1">6</h2>
+                      <span class="d-flex align-items-center vibe-meter-stat more align-self-start px-2 py-1 mt-2">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 2px;">
+                          <path d="M8.5 12.6667V3.33333" stroke="#1F8B59" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3.83333 8L8.5 3.33333L13.1667 8" stroke="#1F8B59" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-xs">1%</span>
+                      </span>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="text-xs font-semibold mb-0">Unsatisfied</h3>
+                      <p class="text-xs m-0">from 3 (last week)</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
